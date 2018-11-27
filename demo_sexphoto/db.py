@@ -9,7 +9,7 @@ import os
 from peewee import *
 from playhouse.db_url import connect
 #创建链接
-db = connect('mysql://root:songnan1994@localhost:3306/sex_photo')
+db = connect('mysql://username:password@localhost:3306/db')
 
 class URL(Model):
 	url=CharField(null=True,index = True)
@@ -128,8 +128,8 @@ class KSE(Model):
 
 
 
-# db.create_tables([YSE,KSE,MXSE,MSE,QSE,OSE,TSE,SSE])
-# db.create_tables([URL,])
+db.create_tables([YSE,KSE,MXSE,MSE,QSE,OSE,TSE,SSE])
+db.create_tables([URL,ITEM_Info])
 
 def db_get_item_firstpic(item_id):
 	item=ITEM_Info.get(ITEM_Info.id==item_id)
