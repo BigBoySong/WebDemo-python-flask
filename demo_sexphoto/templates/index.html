@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>看图吧</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/uikit.min.css')}}"/>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/components/slidenav.min.css')}}"/>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/components/slideshow.min.css')}}"/>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/components/notify.min.css')}}"/>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/components/sticky.min.css')}}"/>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"/>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}"/>
+    <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/uikit.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/components/lightbox.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/components/pagination.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/components/slideshow.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/components/notify.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/components/sticky.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/masonry.pkgd.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/imagesloaded.pkgd.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/get_data.js')}}"></script>
+</head>
+<body>
+<div>
+    <nav id="top" class="uk-navbar">
+        <div class="uk-navbar-brand">我要看图</div>
+        <ul class="uk-navbar-nav uk-float-right">
+            <li id="for-me" class="uk-parent"><a href="#Contact_me" data-uk-offcanvas><i class="uk-icon-inbox"></i> 联系我</a>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <div id="Contact_me" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar uk-offcanvas-bar-show">
+                <div class="uk-panel"><h3 class="uk-panel-title">网建人员：</h3>
+                    <p>song<br><strong>xxx@qq.com</strong></p>
+                    <p>song<br><strong>xxx@qq.com</strong></p></div>
+                <div class="uk-panel"><h3 class="uk-panel-title">广告投放：</h3>
+                    <p>song<br><strong>xxx@qq.com</strong></p>
+                    <p>song<br><strong>xxx@qq.com</strong></p></div>
+            </div>
+        </div>
+    </div>
+    <nav class="uk-navbar nav-two" data-uk-sticky>
+        <ul class="uk-navbar-nav">
+            <li><a rel="button" class="items_type active_item">亚洲色图</a></li>
+            <li><a rel="button" class="items_type">欧美色图</a></li>
+            <li><a rel="button" class="items_type">清纯唯美</a></li>
+            <li><a rel="button" class="items_type">卡通动漫</a></li>
+            <li><a rel="button" class="items_type">美腿丝袜</a></li>
+            <li><a rel="button" class="items_type">明星淫乱</a></li>
+            <li><a rel="button" class="items_type">少妇熟女</a></li>
+            <li><a rel="button" class="items_type">偷拍自拍</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="wrapper">
+    <div id="container"></div>
+</div>
+</body>
+</html>
