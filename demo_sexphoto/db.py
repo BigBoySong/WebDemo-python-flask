@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Date    : 2018-10-11 14:29:58
-# @Author  : Your Name (you@example.org)
-# @Link    : http://example.org
-# @Version : $Id$
 
 import os
 from peewee import *
